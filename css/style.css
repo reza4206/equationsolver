@@ -53,3 +53,11 @@ p{
 #result {
     margin-top: 20px;
 }
+.button{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    align-items: center;
+}
