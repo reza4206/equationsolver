@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Number App</title>
+    <title>Quadratic Equation Solver</title>
     <link rel="stylesheet" href="styles.css">
 <link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <div id="container" class="container">
-        <img src="https://i0.wp.com/rezapoint.wpcomstaging.com/wp-content/uploads/2024/03/Lucky_Number-removebg-preview.png?w=482&ssl=1" alt="Girl in a jacket" width="150" height="100">
-        <div id="form" class="form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter your name">
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob"><br>
-            <button onclick="showLuck()">Show My Luck</button>
-            <button onclick="clearFields()">Clear</button><br>
-            <p><small>Developed by Mr. Rezaul Haque</small></p>
+    <div class="container">
+        <img src="https://i0.wp.com/rezapoint.wpcomstaging.com/wp-content/uploads/2024/03/EQSOL_App-removebg-preview.png?w=766&ssl=1" alt="Girl in a jacket" width="300" height="100">
+        <div class="input-container">
+            <label for="a">Enter a=....(Coefficient of x<sup>2</sup>)</label>
+            <input type="number" id="a">
+            <label for="b">Enter b=....(Coefficient of x)</label>
+            <input type="number" id="b">
+            <label for="c">Enter c=....(Constant Part)</label>
+            <input type="number" id="c">
+            <br><button id="solutionBtn">Solution</button>
+            <button id="clearBtn">Clear</button>
+            <Small><p>Developed by Mr. Rezaul Haque</p></small>
         </div>
-        <div id="result" style="display: none;"></div>
-        <button id="backButton" onclick="goBack()" style="display: none;">Back</button>
+        
+        <div id="result-container" class="result-container hidden">
+            <h2 id="solution"></h2>
+            <button id="backBtn">Back</button>
+        </div>
     </div>
     <script src="script.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
